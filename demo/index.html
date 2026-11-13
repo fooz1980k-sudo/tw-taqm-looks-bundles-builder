@@ -1,0 +1,16 @@
+<!doctype html><html dir="rtl" lang="ar"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Demo</title>
+<script>{ const l = new URLSearchParams(location.search).get('lang') || 'ar'; document.documentElement.lang = l; document.documentElement.dir = l === 'en' ? 'ltr' : 'rtl'; }</script>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=block" rel="stylesheet">
+<style>body{margin:0;font-family:Tajawal,system-ui,sans-serif;background:#faf7f1;color:#1b1408;--color-primary:#9b6b2f} .lbl{font:600 12px/1 monospace;color:#999;padding:8px 16px}</style>
+<script src="harness.js"></script><script src="configs.js"></script>
+</head><body>
+<script>
+for (const [name, x] of Object.entries(window.__cfg)) {
+  const el = document.createElement('salla-' + (x.tag || name)); el.dataset.shot = name; if (x.act) el.dataset.act = name;
+  el.config = x.config; document.body.appendChild(el);
+}
+window.__act = Object.fromEntries(Object.entries(window.__cfg).filter(([, x]) => x.act).map(([n, x]) => [n, () => x.act(document.querySelector(`[data-shot="${n}"]`))]));
+</script>
+<script type="module" src="bundle.js"></script>
+</body></html>
