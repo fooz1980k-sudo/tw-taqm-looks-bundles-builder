@@ -10,9 +10,9 @@
   "author": {
     "name": "Khaled Alshamrani",
     "email": "fooz1980k@gmail.com",
-    "url": "https://github.com/fooz1980k-sudo/tw-taqm"
+    "url": "https://github.com/fooz1980k-sudo/tw-taqm-looks-bundles-builder"
   },
-  "repository": "https://github.com/fooz1980k-sudo/tw-taqm",
+  "repository": "https://github.com/fooz1980k-sudo/tw-taqm-looks-bundles-builder",
   "components": [
     {
       "title": "طقم · ركّب طقمك",
@@ -875,7 +875,7 @@
         }
       ],
       "key": "1dcae573-a587-574e-80e7-71b2a23923c6",
-      "image": "https://raw.githubusercontent.com/fooz1980k-sudo/tw-taqm/main/previews/taqm-builder.jpg"
+      "image": "https://raw.githubusercontent.com/fooz1980k-sudo/tw-taqm-looks-bundles-builder/main/previews/taqm-builder.jpg"
     },
     {
       "title": "طقم · يُشترى معاً",
@@ -1671,7 +1671,7 @@
         }
       ],
       "key": "40d58744-3d38-54fa-9e55-88d03a3a23aa",
-      "image": "https://raw.githubusercontent.com/fooz1980k-sudo/tw-taqm/main/previews/taqm-together.jpg"
+      "image": "https://raw.githubusercontent.com/fooz1980k-sudo/tw-taqm-looks-bundles-builder/main/previews/taqm-together.jpg"
     },
     {
       "title": "طقم · اختر أي عدد بسعر",
@@ -2448,7 +2448,7 @@
         }
       ],
       "key": "19237783-5ab5-57e2-ad52-168d6f8cba27",
-      "image": "https://raw.githubusercontent.com/fooz1980k-sudo/tw-taqm/main/previews/taqm-pick.jpg"
+      "image": "https://raw.githubusercontent.com/fooz1980k-sudo/tw-taqm-looks-bundles-builder/main/previews/taqm-pick.jpg"
     },
     {
       "title": "طقم · كل ما زدت وفّرت",
@@ -3218,7 +3218,7 @@
         }
       ],
       "key": "9b272183-5d86-5f20-943e-7ec4b4ee831b",
-      "image": "https://raw.githubusercontent.com/fooz1980k-sudo/tw-taqm/main/previews/taqm-tiers.jpg"
+      "image": "https://raw.githubusercontent.com/fooz1980k-sudo/tw-taqm-looks-bundles-builder/main/previews/taqm-tiers.jpg"
     },
     {
       "title": "طقم · منسّق الإطلالة",
@@ -4018,7 +4018,7 @@
         }
       ],
       "key": "83dfb4d0-6464-5d95-b38e-c70654d7d704",
-      "image": "https://raw.githubusercontent.com/fooz1980k-sudo/tw-taqm/main/previews/taqm-outfit.jpg"
+      "image": "https://raw.githubusercontent.com/fooz1980k-sudo/tw-taqm-looks-bundles-builder/main/previews/taqm-outfit.jpg"
     }
   ],
   "author_email": "fooz1980k@gmail.com",

@@ -22,7 +22,7 @@ outfit = dict(title="طقم · منسّق الإطلالة", icon="sicon-shirt",
     COLL("rows", "صفوف التنسيق (من الأعلى للأسفل)", [T("name", "اسم الصف", mx=30), PROD(label="منتجات الصف", mn=1, mx=20)], [{"name": "القطعة الأساسية"}, {"name": "الطبقة الثانية"}, {"name": "الإكسسوار"}], mx=5, item="صف"),
     INT("default_budget", "الميزانية الافتراضية (0 = تلقائي)", 0), SW("show_budget", "مؤشر الميزانية", True), NUM("row_height", "ارتفاع الصف (px)", 150, 90, 260),
     T("side_title", "العنوان الجانبي", "نسّقها على ذوقك", mx=50), TA("side_text", "النص الجانبي", "", mx=200), T("shuffle_text", "نص زر التنسيق العشوائي", "نسّق لي", mx=20), T("button", "نص زر الإضافة", "أضف التنسيق للسلة", mx=30), COUPON()] + SRC("best_selling", 30, 40)[:2] + DESIGN(theme="ivory"))
-build("tw-taqm", {"ar": "طَقم — منسّق الإطلالات والباقات", "en": "Taqm — Looks & Bundles Builder"},
+build("tw-taqm", repo="tw-taqm-looks-bundles-builder", {"ar": "طَقم — منسّق الإطلالات والباقات", "en": "Taqm — Looks & Bundles Builder"},
       {"ar": "5 عناصر ترفع متوسط الطلب: ركّب طقمك بخانات ولوحة حية وخصم شرائح، يُشترى معاً بإضافات متناسقة السعر، «أي 3 بسعر» بتوفير حقيقي محسوب، «كل ما زدت وفّرت» بحاسبة شرائح، ومنسّق إطلالة بالسحب يحترم ميزانية العميل. الخصومات تُطبّق بكوبون سلة الذي تحدده.",
        "en": "5 components that lift order value: a set builder with slots, live board and tiered discount, bought-together add-ons with price harmony, any-N-for-X with real computed savings, quantity tier calculator, and a swipe outfit stylist that respects the shopper's budget. Discounts apply through your Salla coupon."},
       [builder, together, pick, tiers, outfit])

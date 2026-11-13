@@ -71,14 +71,15 @@ def count(fields):
         if f.get("type") == "collection": n += count(f["fields"])
     return n
 
-def build(slug, name, desc, comps, repo_owner="fooz1980k-sudo"):
+def build(slug, name, desc, comps, repo_owner="fooz1980k-sudo", repo=None):
+    repo = repo or slug
     U = lambda n: str(uuid.uuid5(uuid.NAMESPACE_URL, f"{slug}/{n}"))
-    img = f"https://raw.githubusercontent.com/{repo_owner}/{slug}/main/previews/{{}}.jpg"
+    img = f"https://raw.githubusercontent.com/{repo_owner}/{repo}/main/previews/{{}}.jpg"
     for c in comps: c["key"] = U(c["name"]); c["image"] = img.format(c["name"])
     tpl_id = U("template")
     out = {"name": name, "description": desc,
-           "author": {"name": "Khaled Alshamrani", "email": "fooz1980k@gmail.com", "url": f"https://github.com/{repo_owner}/{slug}"},
-           "repository": f"https://github.com/{repo_owner}/{slug}", "components": comps, "author_email": "fooz1980k@gmail.com", "support_url": "https://smmlystore.com",
+           "author": {"name": "Khaled Alshamrani", "email": "fooz1980k@gmail.com", "url": f"https://github.com/{repo_owner}/{repo}"},
+           "repository": f"https://github.com/{repo_owner}/{repo}", "components": comps, "author_email": "fooz1980k@gmail.com", "support_url": "https://smmlystore.com",
            "templates": [{"id": tpl_id, "path": f"templates.{slug}-template", "category_id": "", "primary_color": "", "thumbnail": "", "is_default": True}]}
     json.dump(out, open("twilight-bundle.json", "w"), ensure_ascii=False, indent=2)
     import os; os.makedirs("templates", exist_ok=True)
